@@ -1,46 +1,46 @@
 # bc_simple_rules.krb
 
 heroes_black_widow
-    use heroes(Black Widow)
+    use heroes(Black_Widow)
     when
         questions.is_woman(True)
 
 heroes_scarlet_witch
-    use heroes(Scarlet Witch)
+    use heroes(Scarlet_Witch)
     when
         questions.is_woman(True)
         questions.is_superhuman(True)
 
 heroes_captain_marvel
-    use heroes(Captain Marvel)
+    use heroes(Captain_Marvel)
     when
         questions.is_woman(True)
         questions.is_superhuman(True)
 		questions.is_product_of_science(True)
 	
-heroes_thor
-    use heroes(Thor)
+heroes_hulk
+    use heroes(Hulk)
     when
         questions.is_woman(False)
 		questions.is_superhuman(True)
 		questions.is_product_of_science(True)
 
 heroes_black_panther
-    use heroes(Black Panther)
+    use heroes(Black_Panther)
     when
         questions.is_woman(False)
         questions.is_superhuman(True)
 		questions.is_rich(True)
 		
 heroes_iron_man
-    use heroes(Iron Man)
+    use heroes(Iron_Man)
     when
         questions.is_woman(False)
 		questions.is_product_of_science(True)
 		questions.is_rich(True)
 
 heroes_ant_man
-    use heroes(Ant Man)
+    use heroes(Ant_Man)
     when
         questions.is_woman(False)
 		questions.is_product_of_science(True)
@@ -50,5 +50,3 @@ heroes_thor
     when
         questions.is_woman(False)
 		questions.is_rich(True)
-
-
