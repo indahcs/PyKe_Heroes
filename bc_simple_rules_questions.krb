@@ -1,22 +1,25 @@
 # bc_simple_rules.krb
 
-heroes_black_widow
-    use heroes(Black_Widow)
-    when
-        questions.is_woman(True)
-
-heroes_scarlet_witch
-    use heroes(Scarlet_Witch)
-    when
-        questions.is_woman(True)
-        questions.is_superhuman(True)
-
 heroes_captain_marvel
     use heroes(Captain_Marvel)
     when
         questions.is_woman(True)
         questions.is_superhuman(True)
 		questions.is_product_of_science(True)
+
+heroes_scarlet_witch
+    use heroes(Scarlet_Witch)
+    when
+        questions.is_woman(True)
+        questions.is_superhuman(True)
+		questions.is_product_of_science(False)
+
+heroes_black_widow
+    use heroes(Black_Widow)
+    when
+        questions.is_woman(True)
+		questions.is_superhuman(False)
+		questions.is_product_of_science(False)
 	
 heroes_hulk
     use heroes(Hulk)
@@ -24,18 +27,21 @@ heroes_hulk
         questions.is_woman(False)
 		questions.is_superhuman(True)
 		questions.is_product_of_science(True)
+		questions.is_rich(False)
 
 heroes_black_panther
     use heroes(Black_Panther)
     when
         questions.is_woman(False)
         questions.is_superhuman(True)
+		questions.is_product_of_science(False)
 		questions.is_rich(True)
 		
 heroes_iron_man
     use heroes(Iron_Man)
     when
         questions.is_woman(False)
+		questions.is_superhuman(False)
 		questions.is_product_of_science(True)
 		questions.is_rich(True)
 
@@ -43,10 +49,14 @@ heroes_ant_man
     use heroes(Ant_Man)
     when
         questions.is_woman(False)
+		questions.is_superhuman(False)
 		questions.is_product_of_science(True)
+		questions.is_rich(False)
 		
 heroes_thor
     use heroes(Thor)
     when
         questions.is_woman(False)
+		questions.is_superhuman(False)
+		questions.is_product_of_science(False)
 		questions.is_rich(True)
